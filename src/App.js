@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useNavigate, Link, useParams } from 'react-router-dom';
 
-const API = 'http://localhost:5000/api';
+const API = import.meta.env.API_URL;
 
 // ============ CONTEXT ============
 const AuthContext = createContext();
